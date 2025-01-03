@@ -44,6 +44,11 @@ ul{
 a{
   cursor: pointer;
   letter-spacing: .1rem;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--soft-red);
 }
 
 li{
@@ -52,10 +57,6 @@ li{
   font-weight: var(--font-weight-400);
   font-size: .875rem;
   color: var(--very-dark-blue);
-}
-
-li:hover{
-  color: var(--soft-red);
 }
 
 .login-link{
@@ -69,4 +70,5 @@ li:hover{
 .login-link:hover{
   background-color: white;
   outline: .124rem solid var(--soft-red);
+  color: var(--soft-red);
 }
