@@ -18,8 +18,9 @@ const Header = () => {
           <li>
             <a href="#">contact</a>
           </li>
+          {/* Not sure if this is the correct way to make a link to a log in button */}
           <a href="#">
-            <li className="login-link">login</li>
+            <button className="login-link">login</button>
           </a>
         </ul>
       </nav>

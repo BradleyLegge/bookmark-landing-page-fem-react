@@ -1,4 +1,6 @@
 import React from "react";
+import managerImage from "../images/illustration-hero.svg";
+import dots from "../images/bg-dots.svg";
 
 const Manager = () => {
   return (
@@ -9,14 +11,23 @@ const Manager = () => {
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <a href="">
-          <button>Get it on Chrome</button>
-        </a>
-        <a href="">
-          <button>Get it on Firefox</button>
-        </a>
+        <div className="get-it-btns">
+          <a href="#">
+            <button className="get-it-google-btn">Get it on Chrome</button>
+          </a>
+          <a href="#">
+            <button className="get-it-firefox-btn">Get it on Firefox</button>
+          </a>
+        </div>
       </div>
-      <div className="right-side-manager"></div>
+      <div className="right-side-manager">
+        <img
+          src={managerImage}
+          className="manager-image"
+          alt="Image of a computer screen"
+        />
+        <div className="background-image"></div>
+      </div>
     </div>
   );
 };

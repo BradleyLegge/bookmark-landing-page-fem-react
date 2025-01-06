@@ -12,6 +12,7 @@
   --soft-red: hsl(0, 94%, 66%);
 
   /* Neutral Colors */
+  --grayish-white: hsl(229, 8%, 96%);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
 
@@ -21,7 +22,7 @@
 }
 
 .hero{
-  width: 90rem;
+  width: 80rem;
   margin: 0 auto;
 }
 
@@ -51,7 +52,7 @@ a:hover{
   color: var(--soft-red);
 }
 
-li{
+li, nav button{
   cursor: pointer;
   text-transform: uppercase;
   font-weight: var(--font-weight-400);
@@ -64,11 +65,98 @@ li{
   color: white;
   padding: .625rem 1.875rem;
   border-radius: .313rem;
-  box-shadow: 0 .125rem 313rem var(--grayish-blue);
+  box-shadow: 0 4px 10px var(--grayish-blue);
+  border: none;
 }
 
 .login-link:hover{
   background-color: white;
   outline: .124rem solid var(--soft-red);
   color: var(--soft-red);
+}
+
+/* Manager Component */
+
+.manager-hero{
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side-manager{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1{
+  font-size: 38px;
+  font-weight: var(--font-weight-500);
+  color: var(--very-dark-blue);
+}
+
+.left-side-manager p{
+  color: var(--grayish-blue);
+  line-height: 1.6rem;
+}
+
+.get-it-btns{
+  display: flex;
+  gap: 15px;
+}
+
+.get-it-google-btn{
+  padding: 10px 30px;
+  border: none;
+  border-radius: .313rem;
+  background-color: var(--soft-blue);
+  color: white;
+  box-shadow: 0 4px 10px var(--grayish-blue);
+}
+
+.get-it-google-btn:hover{
+  cursor: pointer;
+  background-color: var(--grayish-white);
+  outline: 2px solid var(--soft-blue);
+  color: var(--soft-blue);
+}
+
+.get-it-firefox-btn{
+  padding: 10px 30px;
+  border: none;
+  border-radius: .313rem;
+  background-color: var(--grayish-white);
+  color: var(--very-dark-blue);
+  box-shadow: 0 4px 10px var(--grayish-blue);
+}
+
+.get-it-firefox-btn:hover{
+  cursor: pointer;
+  background-color: var(--grayish-white);
+  outline: 2px solid var(--very-dark-blue);
+  color: var(--very-dark-blue);
+}
+
+.right-side-manager{
+  position: relative;
+  text-align: right;
+}
+
+.manager-image{
+  position: relative;
+  left: 100px;
+  width: 100%;
+}
+
+.background-image{
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 100vw;
+  height: 250px;
+  z-index: -1;
+  background-color: var(--soft-blue);
+  border-radius: 1500px 0 0 1500px;
 }
