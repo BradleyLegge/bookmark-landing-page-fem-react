@@ -8,14 +8,14 @@ const Header = () => {
         <img src={logo} alt="Bookmark logo" />
       </a>
       <nav>
-        <ul>
-          <li>
+        <ul className="navbar-list">
+          <li className="navbar-list-item">
             <a href="#">features</a>
           </li>
-          <li>
+          <li className="navbar-list-item">
             <a href="#">pricing</a>
           </li>
-          <li>
+          <li className="navbar-list-item">
             <a href="#">contact</a>
           </li>
           {/* Not sure if this is the correct way to make a link to a log in button */}
