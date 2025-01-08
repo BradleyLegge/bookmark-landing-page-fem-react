@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header-hero">
       <a>
-        <img src={logo} alt="Bookmark logo" />
+        <img src={logo} className="bookmark-logo-nav" alt="Bookmark logo" />
       </a>
       <nav>
         <ul className="navbar-list">
@@ -20,7 +20,7 @@ const Header = () => {
           </li>
           {/* Not sure if this is the correct way to make a link to a log in button */}
           <a href="#">
-            <button className="login-link">login</button>
+            <button className="login-link-btn">login</button>
           </a>
         </ul>
       </nav>

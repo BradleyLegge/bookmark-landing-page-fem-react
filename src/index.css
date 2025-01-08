@@ -60,7 +60,7 @@ a:hover{
   color: var(--very-dark-blue);
 }
 
-.login-link{
+.login-link-btn{
   background-color: var(--soft-red);
   color: white;
   padding: .625rem 1.875rem;
@@ -69,7 +69,7 @@ a:hover{
   border: none;
 }
 
-.login-link:hover{
+.login-link-btn:hover{
   background-color: white;
   outline: .124rem solid var(--soft-red);
   color: var(--soft-red);
