@@ -107,7 +107,7 @@ h1{
   gap: 15px;
 }
 
-.get-it-google-btn, .features-more-info-btn{
+.get-it-google-btn, .features-more-info-btn, .extension-btn{
   padding: 10px 30px;
   border: none;
   border-radius: .313rem;
@@ -116,7 +116,7 @@ h1{
   box-shadow: 0 4px 10px var(--grayish-blue);
 }
 
-.get-it-google-btn:hover, .features-more-info-btn:hover{
+.get-it-google-btn:hover, .features-more-info-btn:hover, .extension-btn:hover{
   cursor: pointer;
   background-color: var(--grayish-white);
   outline: 2px solid var(--soft-blue);
@@ -239,4 +239,52 @@ h1{
 
 .features-more-info-btn{
   width: 20%;
+}
+
+/* Extensions Component */
+
+.extensions-hero{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  margin-top: 200px;
+}
+
+.extension-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.extension-type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 0 20px 0 ;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px var(--grayish-blue);
+  margin-bottom: 100px;
+}
+
+.chrome-type{
+  position: relative;
+
+}
+
+.firefox-type{
+  position: relative;
+  top: 30px;
+}
+
+.opera-type{
+  position: relative;
+  top: 60px;
+}
+
+.browser-logo{
+  width: 40%;
 }

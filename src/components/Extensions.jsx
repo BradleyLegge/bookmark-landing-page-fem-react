@@ -13,10 +13,10 @@ const Extensions = () => {
         got a favourite you'd like us to prioritize.
       </p>
       <div className="extension-container">
-        <div className="extension-type">
+        <div className="extension-type chrome-type">
           <img
             src={chromeLogo}
-            className="chrome-logo"
+            className="chrome-logo browser-logo"
             alt="Google Chrome logo"
           />
           <h3>Add to Chrome</h3>
@@ -24,15 +24,23 @@ const Extensions = () => {
           <img src={dots} className="dots.img" alt="Repeating dots" />
           <button className="extension-btn">Add & Install Extension</button>
         </div>
-        <div className="extension-type">
-          <img src={firefoxLogo} className="firefox-logo" alt="Firefox logo" />
+        <div className="extension-type firefox-type">
+          <img
+            src={firefoxLogo}
+            className="firefox-logo browser-logo"
+            alt="Firefox logo"
+          />
           <h3>Add to Firefox</h3>
           <p className="extension-para">Minimum version 55</p>
           <img src={dots} className="dots.img" alt="Repeating dots" />
           <button className="extension-btn">Add & Install Extension</button>
         </div>
-        <div className="extension-type">
-          <img src={operaLogo} className="opera-logo" alt="Opera logo" />
+        <div className="extension-type opera-type">
+          <img
+            src={operaLogo}
+            className="opera-logo browser-logo"
+            alt="Opera logo"
+          />
           <h3>Add to Opera</h3>
           <p className="extension-para">Minimum version 46</p>
           <img src={dots} className="dots.img" alt="Repeating dots" />
