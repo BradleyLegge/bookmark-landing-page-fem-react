@@ -6,7 +6,11 @@ const ContactUs = () => {
       <h4>35,000+ ALREADY JOINED</h4>
       <h2>Stay up-to-date with what we're doing</h2>
       <form>
-        <input name="email" className="email" />
+        <input
+          name="email"
+          className="email-input"
+          placeholder="Enter your email address"
+        />
         <button type="submit" className="contact-us-btn">
           Contact Us
         </button>

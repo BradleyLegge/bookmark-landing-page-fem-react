@@ -332,3 +332,53 @@ h1{
 .qa-btn:hover{
   color: var(--soft-red);
 }
+
+/* Contact Content */
+
+.contact-hero{
+  background-color: var(--soft-blue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+  color: var(--grayish-white);
+}
+
+h4{
+  font-weight: var(--font-weight-400);
+  letter-spacing: 5px;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: var(--font-weight-500);
+}
+
+form{
+  display: flex;
+  gap: 10px;
+}
+
+.email-input, .contact-us-btn{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.email-input::placeholder{
+  color: var(--grayish-blue);
+}
+
+.contact-us-btn{
+  cursor: pointer;
+  background-color: var(--soft-red);
+  color: var(--grayish-white);
+}
+
+.contact-us-btn:hover{
+  background-color: var(--grayish-white);
+  color: var(--soft-red);
+  outline: 1px solid var(--soft-red);
+}
