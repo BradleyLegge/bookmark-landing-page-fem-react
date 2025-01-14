@@ -1,7 +1,7 @@
 import React from "react";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
 import bookmarkLogo from "../images/logo-bookmark.svg";
-import facebookIcon from "../images/icon-facebook.svg";
-import twitterIcon from "../images/icon-twitter.svg";
 
 const Footer = () => {
   return (
@@ -24,9 +24,13 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="social-icons">
-        <img src={facebookIcon} className="facebook-icon" alt="Facebook Icon" />
-        <img src={twitterIcon} className="twitter-icon" alt="Twitter Icon" />
+      <div className="social-icons-container">
+        <button className="social-icon-btn">
+          <FaSquareFacebook className="social-icon" />
+        </button>
+        <button className="social-icon-btn">
+          <FaTwitter className="social-icon" />
+        </button>
       </div>
     </div>
   );

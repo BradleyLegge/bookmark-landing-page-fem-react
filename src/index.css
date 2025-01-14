@@ -382,3 +382,64 @@ form{
   color: var(--soft-red);
   outline: 1px solid var(--soft-red);
 }
+
+/* Footer Component */
+
+.footer-hero{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  padding: 30px 0;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bookmark-logo-footer{
+  background-color: var(--grayish-white);
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-list-item a{
+  text-decoration: none;
+  color: var(--grayish-white);
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer-list-item a:hover{
+  color: var(--soft-red)
+}
+
+.social-icons-container{
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.social-icon-btn{
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--grayish-white);
+}
+
+.social-icon-btn:hover{
+  color: var(--soft-red);
+}
