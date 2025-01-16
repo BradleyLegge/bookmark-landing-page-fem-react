@@ -14,6 +14,7 @@
   /* Neutral Colors */
   --grayish-white: hsl(229, 8%, 96%);
   --grayish-blue: hsl(229, 8%, 60%);
+  --grayish-blue-lite: hsl(229, 8%, 80%);
   --very-dark-blue: hsl(229, 31%, 21%);
 
   /* Font Weights */
@@ -21,8 +22,13 @@
   --font-weight-500: 500;  
 }
 
+
+body{
+  overflow-x: hidden;
+}
+
 .hero{
-  width: 80rem;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,16 +38,17 @@
 /* Header Component */
 
 .header-hero{
-  margin-top: 3.125rem;
+  margin: 40px 0;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-list{
+.navbar-list, .footer-list{
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
   list-style: none;
 }
 
@@ -49,9 +56,10 @@
   cursor: pointer;
   letter-spacing: .1rem;
   text-decoration: none;
+  padding: 10px 0;
 }
 
-a:hover{
+a:hover, .footer-list-item a:hover{
   color: var(--soft-red);
 }
 
@@ -81,13 +89,14 @@ a:hover{
 /* Manager Component */
 
 .manager-hero{
-  margin: 100px 0;
-  width: 100%;
+  margin: 50px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
 .left-side-manager{
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +109,7 @@ h1{
   color: var(--very-dark-blue);
 }
 
-.left-side-manager p{
+p{
   color: var(--grayish-blue);
   line-height: 1.6rem;
 }
@@ -111,7 +120,7 @@ h1{
 }
 
 .get-it-google-btn, .features-more-info-btn, .extension-btn, .faq-btn{
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: none;
   border-radius: .313rem;
   background-color: var(--soft-blue);
@@ -144,24 +153,26 @@ h1{
 
 .right-side-manager{
   position: relative;
-  text-align: right;
+  display: flex;
+  justify-content: end;
 }
 
 .manager-image{
   position: relative;
   left: 100px;
-  width: 100%;
+  width: 80%;
 }
 
 .background-image{
   position: absolute;
+  width: 80%;
+  right: -40%;
   top: 100px;
-  left: 300px;
-  width: 100%;
-  height: 250px;
+  height: 300px;
   z-index: -1;
   background-color: var(--soft-blue);
   border-radius: 1500px 0 0 1500px;
+
 }
 
 /* Features Component */
@@ -169,7 +180,7 @@ h1{
 .features-hero{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   align-items: center;
   gap: 50px;
 }
@@ -195,9 +206,8 @@ h1{
 }
 
 .features-list{
-  border-bottom: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--grayish-blue-lite);
   padding: 20px;
-  margin-bottom: 100px;
   list-style: none;
   display: flex; 
   gap: 80px;
@@ -214,7 +224,9 @@ h1{
 }
 
 .simple-bookmarking-tab{
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 100px;
 }
 
@@ -224,10 +236,10 @@ h1{
 
 .background-image-features{
   position: absolute;
-  top: 175px;
-  right: 100px;
-  width: 100%;
-  height: 250px;
+  top: 100px;
+  left: -40%;
+  width: 120%;
+  height: 300px;
   z-index: -1;
   background-color: var(--soft-blue);
   border-radius: 0 1500px 1500px 0;
@@ -241,7 +253,7 @@ h1{
 }
 
 .features-more-info-btn{
-  width: 20%;
+  width: 15%;
 }
 
 /* Extensions Component */
@@ -396,17 +408,11 @@ form{
 .footer-container{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2.5rem;
 }
 
 .bookmark-logo-footer{
   background-color: var(--grayish-white);
-}
-
-.footer-list{
-  display: flex;
-  list-style: none;
-  gap: 20px;
 }
 
 .footer-list-item a{
@@ -417,10 +423,6 @@ form{
   letter-spacing: 1px;
   font-size: 12px;
   padding: 10px;
-}
-
-.footer-list-item a:hover{
-  color: var(--soft-red)
 }
 
 .social-icons-container{
