@@ -41,6 +41,12 @@ body{
     box-shadow: 0 5px 10px var(--grayish-blue);
 }
 
+.btn:hover{
+    outline: 2px solid var(--soft-blue);
+    color: var(--soft-blue);
+    background-color: white;
+}
+
 .line{
     border-top: 1px solid var(--grayish-blue);
 }
@@ -220,6 +226,12 @@ h1{
 .firefox-btn{
     background-color: var(--grayish-blue-bg);
     color: var(--very-dark-blue);
+}
+
+.firefox-btn:hover{
+    outline: 2px solid var(--very-dark-blue);
+    color: var(--very-dark-blue);
+    background-color: white;
 }
 
 @media only screen and (min-width: 768px)
